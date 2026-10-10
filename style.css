@@ -1,21 +1,27 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: white
+    background-color: #0F4C5C;
 }
 
 /* Style the navbar */
 #navbar {
     display: flex;
-    justify-content:space-around;
     position: sticky;
-    padding: 14px;
-    overflow: hidden;
+    top: 0;
+  
     background-color: #333;
-    text-decoration: none;
 }
 
-
+/* Navbar links */
+#navbar a {
+  
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
 
 /* Page content */
 .content {
