@@ -28,3 +28,10 @@ body{
   padding: 16px;
 } 
 
+/* Mobile view: screens 600px wide or smaller */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
