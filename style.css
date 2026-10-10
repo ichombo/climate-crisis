@@ -1,7 +1,8 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: #1F4E79;
+    background-color: #0e1c2a;
+    color: #adafca;
 }
 
 /* Style the navbar */
@@ -9,8 +10,8 @@ body{
     display: flex;
     position: sticky;
     top: 0;
-  
-    background-color: #333;
+    width:100vw;
+    background-color: #1e3751;
     border-color: rgb(255,190,0,0.44);
 }
 
