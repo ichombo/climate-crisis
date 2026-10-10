@@ -1,7 +1,7 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: #1F4E79;
+    background-color: #0F4C5C;
 }
 
 /* Style the navbar */
@@ -11,7 +11,6 @@ body{
     top: 0;
   
     background-color: #333;
-    border-color: rgb(255,190,0,0.44);
 }
 
 /* Navbar links */
@@ -28,3 +27,4 @@ body{
 .content {
   padding: 16px;
 } 
+
