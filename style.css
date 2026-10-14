@@ -4,6 +4,9 @@ body{
     background-color: #0e1c2a;
     color: #adafca;
 }
+h1{
+    color:whitesmoke;
+}
 
 .hamburger{
     flex-direction: column;
