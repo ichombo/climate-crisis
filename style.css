@@ -1,34 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
 body{
     display: flex;
     flex-direction: column;
     background-color: #0e1c2a;
     color: #adafca;
+    align-items: center;
+    font-family: 'DM Sans', sans-serif;
+}
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+header svg {
+    width: 500px;
+    height: auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Fraunces', serif;
+}
+
+h1{
+    color:whitesmoke;
+}
+
+.hamburger{
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #f2f2f2;
 }
 
 /* Style the navbar */
+
 #navbar {
     display: flex;
     position: sticky;
     top: 0;
-    width:100vw;
+    align-self: flex-start;
+    width: 100%;
     background-color: #1e3751;
-    border-color: rgba(255, 17, 0, 0.9);
+    border-bottom: 1px solid rgba(255, 17, 0, 0.9);
+    box-shadow: 0 18px 42px rgba(178, 167, 144, 0.25);
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Navbar links */
 #navbar a {
   
-    display: block;
+   
     color: #f2f2f2;
     text-align: center;
     padding: 14px;
     text-decoration: none;
 }
 
+.donation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+    margin: 30px 0 30px;
+}
+.donation button{
+    background-color: #FFAA00;
+    border: 0px;
+    border-radius: 30px;
+    color: #0E1C2A;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 12px 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(255, 170, 0, 0.25);
+    transition: all 0.2s ease;
+}
+
+.donation button:hover {
+    background-color: #ffc44d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(255, 170, 0, 0.35);
+}
+
+.donation button:active {
+    transform: translateY(0);
+}
+
+
 /* Page content */
 .content {
-  padding: 16px;
+    padding: 20px 50px;
 } 
+.content h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
 
 /* Mobile view: screens 600px wide or smaller */
 @media (max-width: 600px) {

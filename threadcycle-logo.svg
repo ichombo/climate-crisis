@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" role="img" aria-labelledby="title description">
+  <title id="title">ThreadCycle</title>
+  <desc id="description">ThreadCycle wordmark with a circular thread-and-leaf symbol.</desc>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M97 24a56 56 0 1 0 44 21" stroke="#FFAA00" stroke-opacity=".62" stroke-width="10"/>
+    <path d="M141 20 142 52 113 39" stroke="#FFAA00" stroke-width="8"/>
+    <path d="M91 113c-1-25 13-42 43-49-2 25-16 42-43 49Z" fill="#8EA88A" stroke="#8EA88A" stroke-width="3"/>
+    <path d="M93 110c9-13 20-23 34-32" stroke="#0E1C2A" stroke-width="3"/>
+    <path d="M70 42c-7 13-10 25-9 39 1 18 11 32 26 40" stroke="#FFAA00" stroke-width="4"/>
+  </g>
+  <text x="177" y="99" fill="#F2F2F2" font-family="Inter, Avenir Next, Montserrat, Arial, sans-serif" font-weight="700" letter-spacing="-2">
+    <tspan font-size="60">Thread</tspan><tspan fill="#FFAA00" font-size="60">Cycle</tspan>
+  </text>
+</svg>
