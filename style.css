@@ -1,9 +1,23 @@
 
+*{
+    box-sizing: border-box;
+}
 body{
     display: flex;
     flex-direction: column;
     background-color: #0e1c2a;
     color: #adafca;
+    align-items: center;
+}
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+header svg {
+    width: 500px;
+    height: auto;
 }
 h1{
     color:whitesmoke;
@@ -49,11 +63,45 @@ h1{
     text-decoration: none;
 }
 
+.donation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+    margin: 30px 0 30px;
+}
+.donation button{
+    background-color: #FFAA00;
+    border: 0px;
+    border-radius: 30px;
+    color: #0E1C2A;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 12px 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(255, 170, 0, 0.25);
+    transition: all 0.2s ease;
+}
+
+.donation button:hover {
+    background-color: #ffc44d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(255, 170, 0, 0.35);
+}
+
+.donation button:active {
+    transform: translateY(0);
+}
+
 
 /* Page content */
 .content {
-  padding: 16px;
+    padding: 20px 50px;
 } 
+.content h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
 
 /* Mobile view: screens 600px wide or smaller */
 @media (max-width: 600px) {
