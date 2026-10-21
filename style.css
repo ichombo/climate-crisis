@@ -140,6 +140,15 @@ h1{
 .top-text button:active {
     transform: translateY(0);
 }
+.top-text button span {
+    display: inline-block;
+    margin-left: 8px;
+    transition: transform 0.2s ease;
+}
+
+.top-text button:hover span {
+    transform: translateX(5px);
+}
 #our-description h2{
   color: #0E1C2A;
 }
