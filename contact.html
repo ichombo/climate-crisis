@@ -46,10 +46,10 @@
 
         <form id="contact-form" class="contact-form">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
 
             <label for="topic">Topic</label>
             <select id="topic" name="topic">
@@ -60,7 +60,7 @@
             </select>
 
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
+            <textarea id="message" name="message" rows="6" placeholder="How can we help?" required></textarea>
 
             <button type="submit">Send Message</button>
             <p id="form-status" class="form-status"></p>
@@ -75,6 +75,19 @@
             <li><strong>Start a swap</strong> at your school, workplace, or neighborhood.</li>
         </ul>
     </main>
+
+    <footer>
+        <div class="footer-brand">
+            <h3>Thread<span>Cycle</span></h3>
+            <p>Rethink. Reuse. Repeat.</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p class="footer-note">Keeping clothes in the cycle and out of landfills.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

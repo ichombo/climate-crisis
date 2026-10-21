@@ -216,6 +216,90 @@ h1{
     font-weight: 600;
 }
 
+::selection {
+    background-color: #FFAA00;
+    color: #0E1C2A;
+}
+
+.content h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin-top: 8px;
+    background-color: #FFAA00;
+    border-radius: 2px;
+}
+
+.content > p:first-of-type::first-letter {
+    float: left;
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+    line-height: 1;
+    padding-right: 8px;
+    color: #FFAA00;
+}
+
+.content li::marker {
+    color: #FFAA00;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #7c8199;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-top: 60px;
+    padding: 30px 50px;
+    background-color: #1e3751;
+    border-top: 1px solid rgba(255, 170, 0, 0.44);
+}
+
+footer h3 {
+    margin: 0;
+    color: #f2f2f2;
+}
+
+footer h3 span {
+    color: #FFAA00;
+}
+
+.footer-brand p {
+    margin: 4px 0 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #FFAA00;
+}
+
+.footer-links a:not(:last-child)::after {
+    content: "|";
+    margin-left: 20px;
+    color: rgba(255, 170, 0, 0.44);
+}
+
+.footer-note {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
 /* Mobile view: screens 600px wide or smaller */
 @media (max-width: 600px) {
     h1 {
@@ -251,5 +335,11 @@ h1{
 
     .content {
         padding: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
     }
 }
