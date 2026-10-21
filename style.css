@@ -83,15 +83,19 @@ h1{
     color: #FFAA00;
 }
 
-.hamburger.active .bar:nth-child(2) {
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked + .hamburger .bar:nth-child(2) {
     opacity: 0;
 }
 
-.hamburger.active .bar:nth-child(1) {
+#menu-toggle:checked + .hamburger .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
 
-.hamburger.active .bar:nth-child(3) {
+#menu-toggle:checked + .hamburger .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
 
@@ -237,7 +241,7 @@ h1{
         width: 100%;
     }
 
-    #navbar .links.open {
+    #menu-toggle:checked ~ .links {
         display: flex;
     }
 
