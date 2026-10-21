@@ -32,9 +32,11 @@ h1{
 }
 
 .hamburger{
+    display: none;
     flex-direction: column;
     cursor: pointer;
     margin-left: 10px;
+    padding: 8px;
 }
 .bar {
     display: block;
@@ -69,6 +71,28 @@ h1{
     text-align: center;
     padding: 14px;
     text-decoration: none;
+}
+
+#navbar .links {
+    display: flex;
+    margin-left: auto;
+}
+
+#navbar a:hover,
+#navbar a.active {
+    color: #FFAA00;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 .donation{
@@ -106,9 +130,86 @@ h1{
 .content {
     padding: 20px 50px;
 } 
+.content {
+    max-width: 900px;
+    width: 100%;
+    line-height: 1.6;
+}
+
 .content h2 {
     margin-top: 50px;
     margin-bottom: 20px;
+}
+
+.content h2,
+.content strong {
+    color: whitesmoke;
+}
+
+.card {
+    background-color: #1e3751;
+    border-left: 4px solid #FFAA00;
+    border-radius: 8px;
+    padding: 4px 24px 12px;
+    margin: 24px 0;
+}
+
+.card h2 {
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 30px;
+}
+
+.contact-form label {
+    color: whitesmoke;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    background-color: #1e3751;
+    border: 1px solid rgba(255, 170, 0, 0.44);
+    border-radius: 8px;
+    color: #f2f2f2;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px 12px;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #FFAA00;
+}
+
+.contact-form button {
+    align-self: flex-start;
+    background-color: #FFAA00;
+    border: 0;
+    border-radius: 30px;
+    color: #0E1C2A;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 12px 20px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ffc44d;
+}
+
+.form-status {
+    color: #8EA88A;
+    font-weight: 600;
 }
 
 /* Mobile view: screens 600px wide or smaller */
@@ -116,5 +217,35 @@ h1{
     h1 {
         font-size: 1.5rem;
         text-align: center;
+    }
+
+    header svg {
+        width: 100%;
+    }
+
+    #navbar {
+        flex-wrap: wrap;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    #navbar .links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #navbar .links.open {
+        display: flex;
+    }
+
+    #navbar .links a {
+        border-top: 1px solid rgba(255, 170, 0, 0.2);
+    }
+
+    .content {
+        padding: 20px;
     }
 }

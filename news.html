@@ -3,21 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climate Crisis News</title>
     <link rel="stylesheet" href="style.css">
+    <title>ThreadCycle: News</title>
 </head>
+
 <body>
     <header>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100">
-            <!-- SVG content here -->
-        </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 510 160" role="img" aria-labelledby="title description">
+        <title id="title">ThreadCycle</title>
+        <desc id="description">ThreadCycle wordmark with a circular thread-and-leaf symbol.</desc>
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M97 24a56 56 0 1 0 44 21" stroke="#FFAA00" stroke-opacity=".62" stroke-width="10"/>
+            <path d="M141 20 142 52 113 39" stroke="#FFAA00" stroke-width="8"/>
+            <path d="M91 113c-1-25 13-42 43-49-2 25-16 42-43 49Z" fill="#8EA88A" stroke="#8EA88A" stroke-width="3"/>
+            <path d="M93 110c9-13 20-23 34-32" stroke="#0E1C2A" stroke-width="3"/>
+            <path d="M70 42c-7 13-10 25-9 39 1 18 11 32 26 40" stroke="#FFAA00" stroke-width="4"/>
+        </g>
+        <text x="177" y="99" fill="#F2F2F2" font-family="Inter, Avenir Next, Montserrat, Arial, sans-serif" font-weight="700" letter-spacing="-2">
+            <tspan font-size="60">Thread</tspan><tspan fill="#FFAA00" font-size="60">Cycle</tspan>
+        </text>
+    </svg>
     </header>
-    <nav id="navbar">
-        <!-- Navigation links here -->
-    </nav>
+
+    <div id="navbar">
+        <div class="hamburger" aria-label="Toggle menu" aria-expanded="false" role="button" tabindex="0">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="news.html" class="active">News</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <h1>Fast Fashion News</h1>
+
     <main class="content">
-        <h2>Latest Climate News</h2>
-        <!-- News content here -->
+        <p>Stay informed about how the clothing industry affects our climate, and what people around the world are doing to change it.</p>
+
+        <article class="card">
+            <h2>Europe Moves to Make Brands Pay for Textile Waste</h2>
+            <p>The European Union has agreed on new rules that will require clothing brands to help pay for the collection, sorting, and recycling of the textiles they sell. Under this approach, known as extended producer responsibility, companies that produce more waste will pay more. EU countries have also been required to collect used textiles separately from regular trash since January 2025.</p>
+        </article>
+
+        <article class="card">
+            <h2>France Takes Aim at Ultra Fast Fashion</h2>
+            <p>Lawmakers in France have advanced legislation targeting ultra fast fashion companies that release thousands of new styles every day. The proposal includes environmental penalties on low cost, high volume clothing and limits on advertising for these brands, with the goal of slowing down overproduction.</p>
+        </article>
+
+        <article class="card">
+            <h2>Mountains of Used Clothes in the Atacama Desert</h2>
+            <p>In northern Chile, huge piles of unsold and discarded clothing have built up in the Atacama Desert. Much of it was shipped from other countries as secondhand clothing but could not be resold. Synthetic fabrics in these piles can take hundreds of years to break down, and fires at the dumps release toxic smoke into nearby communities.</p>
+        </article>
+
+        <article class="card">
+            <h2>Secondhand Clothing Keeps Growing</h2>
+            <p>Thrift stores, resale apps, and clothing swaps are more popular than ever, especially among young people. Buying used clothing extends the life of each garment and reduces the demand for new production, which is where most of fashion's climate impact comes from.</p>
+        </article>
+
+        <article class="card">
+            <h2>Microplastics From Our Closets</h2>
+            <p>Synthetic fabrics like polyester, nylon, and acrylic shed tiny plastic fibers every time they are washed. These microfibers pass through water treatment plants and end up in rivers and oceans. Washing clothes less often, using cold water, and choosing natural fibers can help reduce this pollution.</p>
+        </article>
+
+        <h2>What You Can Do</h2>
+        <ul>
+            <li>Buy less and choose pieces you will wear for years.</li>
+            <li>Shop secondhand or swap clothes with friends.</li>
+            <li>Repair clothes instead of replacing them.</li>
+            <li>Donate or resell clothing you no longer wear.</li>
+            <li>Support brands that are open about how and where their clothes are made.</li>
+        </ul>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
