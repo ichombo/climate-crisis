@@ -382,4 +382,102 @@ footer h3 span {
         text-align: center;
         padding: 30px 20px;
     }
+
+        /* Hero section */
+    .top-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .top-text {
+        margin-left: 0;
+        padding: 0 20px;
+    }
+
+    .top-text h1 {
+        font-size: 2.2rem;
+        line-height: 1.15;
+        margin-bottom: 15px;
+    }
+
+    .top-text h2 {
+        font-size: 1.3rem;
+        margin-top: 10px;
+    }
+
+    .top-text button {
+        margin-top: 10px;
+    }
+
+    #donateIMG {
+        width: 220px;
+        height: 220px;
+        margin: 0;
+    }
+
+
+    /* About Us, Mission, and Vision */
+    .aboutUs,
+    .mission,
+    .vision {
+        flex-direction: column;
+        gap: 25px;
+        padding: 40px 25px;
+        text-align: center;
+    }
+
+    .aboutUs .info,
+    .mission > div:last-child,
+    .vision > div:first-child {
+        width: 100%;
+    }
+
+    .aboutUs .pic,
+    .mission .pic,
+    .vision .pic {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .pic img {
+        width: 170px;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* Section headings */
+    #our-description h2 {
+        font-size: 1.7rem;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+
+    /* Text inside About/Mission/Vision */
+    #our-description p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+
+    /* Main content after the three sections */
+    .content > h2 {
+        font-size: 1.7rem;
+        line-height: 1.2;
+    }
+
+    .content > p,
+    .content > ul {
+        font-size: 0.95rem;
+    }
+
+    .content > ul {
+        padding-left: 25px;
+    }
+
 }
