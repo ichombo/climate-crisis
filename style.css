@@ -335,6 +335,39 @@ footer h3 span {
     color: rgba(255, 170, 0, 0.44);
 }
 
+.social-links {
+    gap: 14px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 170, 0, 0.44);
+    border-radius: 50%;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.social-links a:not(:last-child)::after {
+    content: none;
+}
+
+.social-links a:hover {
+    border-color: #FFAA00;
+}
+
+.social-links svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
 .footer-note {
     margin: 0;
     font-size: 0.9rem;
